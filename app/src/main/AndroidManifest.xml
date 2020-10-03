@@ -9,7 +9,8 @@
         android:roundIcon="@drawable/layout_logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
-        <activity android:name=".ProductsActivity"></activity>
+        <activity android:name=".BasketActivity"></activity>
+        <activity android:name=".ProductsActivity" />
         <activity android:name=".MenuActivity" />
         <activity android:name=".CategoriesActivity" />
         <activity android:name=".ProfileActivity" />

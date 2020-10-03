@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BasketActivity"
+    android:background="@drawable/background">
+    <ImageView
+        android:id="@+id/image_view012"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo_little"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="30dp" />
+    <TextView
+        android:id="@+id/back_text12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Назад"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/image_view012"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintLeft_toRightOf="@id/image_view012"
+        app:layout_constraintTop_toTopOf="@+id/image_view012" />
+    <ImageView
+        android:id="@+id/image_view0102"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:background="@drawable/rectangle3"
+        app:layout_constraintTop_toTopOf="@+id/back_text12"
+        app:layout_constraintBottom_toBottomOf="@+id/back_text12"
+        app:layout_constraintRight_toRightOf="parent"/>
+    <ImageView
+        android:id="@+id/image_view01012"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/search_print"
+        app:layout_constraintLeft_toLeftOf="@id/image_view0102"
+        app:layout_constraintTop_toTopOf="@id/image_view0102"
+        app:layout_constraintBottom_toBottomOf="@id/image_view0102"
+        android:layout_marginLeft="20dp"/>
+    <TextView
+        android:id="@+id/search_bar12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Поиск"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/image_view012"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintLeft_toRightOf="@id/image_view01012"
+        app:layout_constraintTop_toTopOf="@+id/image_view012" />
+
+    <ImageView
+        android:id="@+id/imageview0"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/rectangle5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginBottom="180dp"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/noproducts_recycler"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        app:layout_constraintLeft_toLeftOf="@id/imageview0"
+        app:layout_constraintRight_toRightOf="@id/imageview0"
+        app:layout_constraintTop_toTopOf="@id/imageview0"
+        android:padding="30dp"/>
+    <ImageView
+        android:id="@+id/imageview1"
+        android:layout_width="250dp"
+        android:layout_height="120dp"
+        android:src="@drawable/rectangle2"
+        app:layout_constraintLeft_toLeftOf="@id/imageview0"
+        app:layout_constraintRight_toRightOf="@id/imageview0"
+        app:layout_constraintBottom_toBottomOf="@id/imageview0"
+        android:layout_marginBottom="30dp"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:text="Если вы желаете молоко именно 3.2%,
+то стоит указать об этом здесь"
+        android:gravity="center"
+        app:layout_constraintLeft_toLeftOf="@id/imageview1"
+        app:layout_constraintRight_toRightOf="@id/imageview1"
+        app:layout_constraintBottom_toBottomOf="@id/imageview1"
+        app:layout_constraintTop_toTopOf="@id/imageview1"
+        android:padding="20dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:src="@drawable/buy1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="25dp"/>
+
+    <TextView
+        android:id="@+id/asd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@id/imageview1"
+        app:layout_constraintBottom_toTopOf="@id/imageview1"
+        android:textSize="23sp"
+        android:text="Итого"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="30dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="23sp"
+        tools:text="500 руб"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="@id/asd"
+        app:layout_constraintTop_toTopOf="@id/asd"
+        app:layout_constraintRight_toRightOf="@id/imageview1"
+        android:layout_marginRight="20dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

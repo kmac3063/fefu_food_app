@@ -49,5 +49,34 @@
         app:layout_constraintTop_toTopOf="@id/prod_image_view1"
         app:layout_constraintBottom_toBottomOf="parent"
         android:padding="30dp"/>
+    <ImageView
+        android:id="@+id/image_view010"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:background="@drawable/rectangle3"
+        app:layout_constraintTop_toTopOf="@+id/back_text1"
+        app:layout_constraintBottom_toBottomOf="@+id/back_text1"
+        app:layout_constraintRight_toRightOf="@id/prod_image_view1"/>
+    <ImageView
+        android:id="@+id/image_view0101"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/search_print"
+        app:layout_constraintLeft_toLeftOf="@id/image_view010"
+        app:layout_constraintTop_toTopOf="@id/image_view010"
+        app:layout_constraintBottom_toBottomOf="@id/image_view010"
+        android:layout_marginLeft="20dp"/>
+    <TextView
+        android:id="@+id/search_bar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Поиск"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/image_view01"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintLeft_toRightOf="@id/image_view0101"
+        app:layout_constraintTop_toTopOf="@+id/image_view01" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
