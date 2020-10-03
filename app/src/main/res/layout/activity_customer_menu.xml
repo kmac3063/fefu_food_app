@@ -152,7 +152,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
-        android:text="Текущих заказов нет"
+        android:text="Текущие заказы"
         android:textColor="@android:color/black"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -231,7 +231,7 @@
         android:id="@+id/kruzhochek5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ланцов Игорь"
+        android:text="Ерилов Юрий"
         android:width="60dp"
         android:textColor="@android:color/black"
         android:layout_marginLeft="20dp"
@@ -274,4 +274,45 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="@+id/ссamimage_view2"
         app:layout_constraintTop_toBottomOf="@+id/kruzhochek" />
+
+
+    <ImageView
+        android:id="@+id/ссinvisible_order123"
+        android:layout_width="149dp"
+        android:layout_height="188dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/rectangle3"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ссamimage_view2" />
+
+    <TextView
+        android:id="@+id/ссtext_view12345asd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="120dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="Зачисление на карту"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/ссinvisible_order123"
+        app:layout_constraintStart_toStartOf="@+id/ссinvisible_order123"
+        app:layout_constraintTop_toTopOf="@+id/ссinvisible_order123" />
+
+    <ImageView
+        android:id="@+id/ссamimage_view228asd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/galka"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/ссinvisible_order123"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/ссinvisible_order123"
+        app:layout_constraintTop_toBottomOf="@+id/ссtext_view12345asd" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
