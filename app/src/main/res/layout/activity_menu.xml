@@ -25,12 +25,12 @@
         android:textColor="@android:color/black"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/acimage_view0"
+        app:layout_constraintBottom_toBottomOf="@+id/amimage_view0"
         android:layout_marginLeft="10dp"
         app:layout_constraintLeft_toRightOf="@id/amimage_view0"
         app:layout_constraintTop_toTopOf="@+id/amimage_view0" />
     <ImageView
-        android:id="@+id/acimage_view1"
+        android:id="@+id/amimage_view1"
         android:layout_width="330dp"
         android:layout_height="140dp"
         android:layout_marginTop="100dp"
@@ -49,9 +49,9 @@
         android:textColor="@android:color/black"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/acimage_view1"
-        app:layout_constraintStart_toStartOf="@+id/acimage_view1"
-        app:layout_constraintTop_toTopOf="@+id/acimage_view1" />
+        app:layout_constraintEnd_toEndOf="@+id/amimage_view1"
+        app:layout_constraintStart_toStartOf="@+id/amimage_view1"
+        app:layout_constraintTop_toTopOf="@+id/amimage_view1" />
 
     <TextView
         android:id="@+id/phone_text_view"
@@ -63,7 +63,7 @@
         android:textStyle="bold"
         android:layout_marginTop="15dp"
         android:layout_marginLeft="30dp"
-        app:layout_constraintStart_toStartOf="@+id/acimage_view1"
+        app:layout_constraintStart_toStartOf="@+id/amimage_view1"
         app:layout_constraintTop_toBottomOf="@+id/name_text_view" />
 
     <TextView
@@ -87,7 +87,7 @@
         android:textColor="@android:color/holo_blue_light"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="@+id/phone_text_view"
-        app:layout_constraintEnd_toEndOf="@+id/acimage_view1"
+        app:layout_constraintEnd_toEndOf="@+id/amimage_view1"
         app:layout_constraintStart_toEndOf="@+id/phone_text_view"
         app:layout_constraintTop_toTopOf="@+id/phone_text_view" />
 
@@ -105,7 +105,7 @@
 
 
     <ImageView
-        android:id="@+id/acimage_view2"
+        android:id="@+id/amimage_view2"
         android:layout_width="332dp"
         android:layout_height="296dp"
         android:layout_marginTop="15dp"
@@ -113,7 +113,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/acimage_view1" />
+        app:layout_constraintTop_toBottomOf="@+id/amimage_view1" />
 
 <!--    TODO Invisible -->
 
@@ -127,7 +127,7 @@
         android:layout_marginTop="20dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/acimage_view2" />
+        app:layout_constraintTop_toBottomOf="@+id/amimage_view2" />
 
     <TextView
         android:id="@+id/invisible_order_text_view"
@@ -181,7 +181,7 @@
     <!--   END TODO Invisible -->
 
     <ImageView
-        android:id="@+id/acimage_view4"
+        android:id="@+id/amimage_view4"
         android:layout_width="150dp"
         android:layout_height="100dp"
         android:background="@drawable/rectangle3"
@@ -189,7 +189,7 @@
         android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/acimage_view2" />
+        app:layout_constraintTop_toBottomOf="@+id/amimage_view2" />
 
     <TextView
         android:id="@+id/text_view12346"
@@ -200,9 +200,9 @@
         android:textColor="@android:color/black"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/acimage_view4"
-        app:layout_constraintStart_toStartOf="@+id/acimage_view4"
-        app:layout_constraintTop_toTopOf="@+id/acimage_view4" />
+        app:layout_constraintEnd_toEndOf="@+id/amimage_view4"
+        app:layout_constraintStart_toStartOf="@+id/amimage_view4"
+        app:layout_constraintTop_toTopOf="@+id/amimage_view4" />
 
 
     <TextView
@@ -213,9 +213,9 @@
         android:text="Корзина пуста"
         android:textColor="@android:color/holo_blue_light"
         android:textSize="12sp"
-        app:layout_constraintBottom_toBottomOf="@+id/acimage_view4"
-        app:layout_constraintEnd_toEndOf="@+id/acimage_view4"
-        app:layout_constraintStart_toStartOf="@+id/acimage_view4"
+        app:layout_constraintBottom_toBottomOf="@+id/amimage_view4"
+        app:layout_constraintEnd_toEndOf="@+id/amimage_view4"
+        app:layout_constraintStart_toStartOf="@+id/amimage_view4"
         app:layout_constraintTop_toBottomOf="@+id/text_view12346" />
 
     <TextView
@@ -227,8 +227,8 @@
         android:textColor="@android:color/black"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/acimage_view2"
-        app:layout_constraintStart_toStartOf="@+id/acimage_view2"
-        app:layout_constraintTop_toTopOf="@+id/acimage_view2" />
+        app:layout_constraintEnd_toEndOf="@+id/amimage_view2"
+        app:layout_constraintStart_toStartOf="@+id/amimage_view2"
+        app:layout_constraintTop_toTopOf="@+id/amimage_view2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
