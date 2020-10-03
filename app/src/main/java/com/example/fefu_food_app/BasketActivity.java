@@ -38,7 +38,7 @@ public class BasketActivity extends AppCompatActivity {
             m.add(p.getPrice());
 
         mResultTextView = findViewById(R.id.result_text_view);
-        mResultTextView.setText(m.toString() + " руб");
+        mResultTextView.setText(m.toString() + " руб.");
     }
 
     private class ProdAdapter extends RecyclerView.Adapter<ProdAdapter.ProdViewHolder> {
@@ -67,19 +67,35 @@ public class BasketActivity extends AppCompatActivity {
             return mProducts.size();
         }
 
+        public void remove(Product p) {
+            int ind = mProducts.indexOf(p);
+            mProducts.remove(ind);
+            notifyItemRemoved(ind);
+        }
+
         class ProdViewHolder extends RecyclerView.ViewHolder {
-            ImageView itemImageView1;
+            ImageView itemImageView;
+            TextView itemTextView;
             TextView mTextView;
+            Product p;
 
             public ProdViewHolder(View itemView) {
                 super(itemView);
-                itemImageView1 = itemView.findViewById(R.id.item_image_view1);
+                itemTextView = itemView.findViewById(R.id.item_text_view1);
                 mTextView = itemView.findViewById(R.id.item_text_view);
+                itemImageView = itemView.findViewById(R.id.item_image_view1);
+                itemImageView.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        remove(p);
+                    }
+                });
             }
 
-            public void bind(Product p) {
-                mTextView.setText(p.getName());
-                mTextView.setText("Удалить");
+            public void bind(Product p1) {
+                p = p1;
+                mTextView.setText(p1.getName());
+                itemTextView.setText("Удалить");
             }
         }
     }

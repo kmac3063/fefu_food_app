@@ -72,7 +72,7 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/noproducts_recycler"
         android:layout_width="0dp"
-        android:layout_height="200dp"
+        android:layout_height="250dp"
         app:layout_constraintLeft_toLeftOf="@id/imageview0"
         app:layout_constraintRight_toRightOf="@id/imageview0"
         app:layout_constraintTop_toTopOf="@id/imageview0"
@@ -90,7 +90,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:textSize="14sp"
-        android:text="Если вы желаете молоко именно 3.2%,
+        android:text="Если вы желаете приобрести молоко именно 3.2%,
 то стоит указать об этом здесь"
         android:gravity="center"
         app:layout_constraintLeft_toLeftOf="@id/imageview1"
