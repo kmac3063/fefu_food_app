@@ -8,7 +8,6 @@ import java.util.ArrayList;
 
 public class UserSettings {
     public String phone;
-    public Bitmap profileImage;
     public String name;
     public String surname;
     public String card;
