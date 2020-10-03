@@ -21,6 +21,9 @@ public class Money {
 
     @Override
     public String toString() {
+        if (price % 100 == 0) {
+            return Integer.toString(price / 100);
+        }
         return Integer.toString(price / 100) + "." + Integer.toString(price % 100);
     }
 }
