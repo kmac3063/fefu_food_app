@@ -239,9 +239,10 @@
 
     <EditText
         android:id="@+id/edit_text27"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:hint="Комната"
+        android:textSize="15sp"
         app:layout_constraintLeft_toLeftOf="@id/image_view27"
         app:layout_constraintRight_toRightOf="@id/image_view27"
         app:layout_constraintTop_toTopOf="@id/image_view27"
