@@ -1,14 +1,14 @@
 package com.example.fefu_food_app.model;
 
 public class UserData {
-    private UserData userData;
+    private static UserData userData;
     private UserData() {
         currentOrder = new Order();
         // TODO load user settings from saved
         userSettings = new UserSettings();
     }
 
-    public UserData getUserData() {
+    public static UserData getUserData() {
         if (userData == null) {
             userData = new UserData();
         }
