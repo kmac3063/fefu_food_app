@@ -4,6 +4,79 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BoardActivity">
+    tools:context=".BoardActivity"
+    android:background="@drawable/background">
+    <ImageView
+        android:id="@+id/ximage_view01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo_little"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="30dp" />
+    <TextView
+        android:id="@+id/xback_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Назад"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/ximage_view01"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintLeft_toRightOf="@id/ximage_view01"
+        app:layout_constraintTop_toTopOf="@+id/ximage_view01" />
+
+    <ImageView
+        android:id="@+id/xprod_image_view1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/rectangle1"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/xproducts_recycler"
+        app:layout_constraintLeft_toLeftOf="@id/xprod_image_view1"
+        app:layout_constraintRight_toRightOf="@id/xprod_image_view1"
+        app:layout_constraintTop_toTopOf="@id/xprod_image_view1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:padding="30dp"/>
+    <ImageView
+        android:id="@+id/ximage_view010"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:background="@drawable/rectangle3"
+        app:layout_constraintTop_toTopOf="@+id/xback_text1"
+        app:layout_constraintBottom_toBottomOf="@+id/xback_text1"
+        app:layout_constraintRight_toRightOf="@id/xprod_image_view1"/>
+    <ImageView
+        android:id="@+id/ximage_view0101"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/search_print"
+        app:layout_constraintLeft_toLeftOf="@id/ximage_view010"
+        app:layout_constraintTop_toTopOf="@id/ximage_view010"
+        app:layout_constraintBottom_toBottomOf="@id/ximage_view010"
+        android:layout_marginLeft="20dp"/>
+    <TextView
+        android:id="@+id/xsearch_bar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Поиск"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/ximage_view01"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintLeft_toRightOf="@id/ximage_view0101"
+        app:layout_constraintTop_toTopOf="@+id/ximage_view01" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
