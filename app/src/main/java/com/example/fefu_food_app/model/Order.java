@@ -24,7 +24,7 @@ public class Order {
      *         new Money(
      *             price // int
      *         ),
-     *         additionalWishse // String
+     *         additionalWishes // String
      *         category // ProductCategory
      *     )
      * );
