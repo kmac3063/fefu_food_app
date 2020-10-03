@@ -2,6 +2,7 @@ package com.example.fefu_food_app;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -17,9 +18,13 @@ public class MenuActivity extends AppCompatActivity {
     private TextView mTextViewName;
     private TextView mTextViewNumber;
     private TextView mTextViewCard;
+    TextView mChangeNumberTextView;
+    TextView mChangeCardTextView;
     ImageView mImageView1;
     TextView mTextView1;
     TextView mTextView2;
+    TextView mCreateTextView;
+    ImageView mBasketImageView;
 
     static String makeNumberBeautiful(String number) {
         StringBuilder stringBuilder = new StringBuilder();
@@ -69,6 +74,41 @@ public class MenuActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 finish();
+            }
+        });
+
+        mChangeNumberTextView = findViewById(R.id.change_phone_text_view);
+        mChangeNumberTextView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MenuActivity.this, ProfileActivity.class);
+                startActivity(i);
+            }
+        });
+        mChangeCardTextView = findViewById(R.id.change_card_text_view);
+        mChangeCardTextView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MenuActivity.this, ProfileActivity.class);
+                startActivity(i);
+            }
+        });
+
+        mCreateTextView = findViewById(R.id.amtext_view111);
+        mCreateTextView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MenuActivity.this, CategoriesActivity.class);
+                startActivity(i);
+            }
+        });
+
+        mBasketImageView = findViewById(R.id.amimage_view4);
+        mBasketImageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MenuActivity.this, BasketActivity.class);
+                startActivity(i);
             }
         });
     }

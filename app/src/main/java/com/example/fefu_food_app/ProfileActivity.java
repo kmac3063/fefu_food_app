@@ -21,7 +21,7 @@ public class ProfileActivity extends AppCompatActivity {
         mImageViewClient.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(ProfileActivity.this, CategoriesActivity.class);
+                Intent i = new Intent(ProfileActivity.this, MenuActivity.class);
                 startActivity(i);
             }
         });

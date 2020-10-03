@@ -38,7 +38,7 @@ public class BasketActivity extends AppCompatActivity {
             m.add(p.getPrice());
 
         mResultTextView = findViewById(R.id.result_text_view);
-        mResultTextView.setText(m.toString());
+        mResultTextView.setText(m.toString() + " руб");
     }
 
     private class ProdAdapter extends RecyclerView.Adapter<ProdAdapter.ProdViewHolder> {
