@@ -26,5 +26,12 @@ public class ProfileActivity extends AppCompatActivity {
             }
         });
         mImageViewCostumer = findViewById(R.id.image_view28);
+        mImageViewCostumer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(ProfileActivity.this, CustomerMenuActivity.class);
+                startActivity(i);
+            }
+        });
     }
 }
