@@ -33,6 +33,10 @@ public class Order {
         products.add(product);
     }
 
+    public List<Product> getList() {
+        return products;
+    }
+
     public Money calculateSum() {
         Money sum = new Money(0);
         for (Product product : products) {
