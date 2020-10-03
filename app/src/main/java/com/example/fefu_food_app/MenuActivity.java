@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.fefu_food_app.model.Product;
@@ -16,6 +17,8 @@ public class MenuActivity extends AppCompatActivity {
     private TextView mTextViewName;
     private TextView mTextViewNumber;
     private TextView mTextViewCard;
+    ImageView mImageView1;
+    TextView mTextView1;
 
     static String makeNumberBeautiful(String number) {
         StringBuilder stringBuilder = new StringBuilder();
@@ -51,5 +54,19 @@ public class MenuActivity extends AppCompatActivity {
         mTextViewCard = findViewById(R.id.card_text_view);
         mTextViewCard.setText("****-****-****-**" + userSettings.card.substring(14));
 
+        mImageView1 = findViewById(R.id.amimage_view0);
+        mTextView1 = findViewById(R.id.amback_text);
+        mTextView1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
+        mImageView1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
     }
 }

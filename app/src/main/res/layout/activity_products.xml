@@ -35,9 +35,10 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginHorizontal="30dp"
+        android:layout_marginHorizontal="20dp"
         android:layout_marginTop="100dp"
-        android:src="@drawable/rectangle1"/>
+        android:src="@drawable/rectangle1"
+        />
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="0dp"
@@ -46,6 +47,7 @@
         app:layout_constraintLeft_toLeftOf="@id/prod_image_view1"
         app:layout_constraintRight_toRightOf="@id/prod_image_view1"
         app:layout_constraintTop_toTopOf="@id/prod_image_view1"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:padding="30dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

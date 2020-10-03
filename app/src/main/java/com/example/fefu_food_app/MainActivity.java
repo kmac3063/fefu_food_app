@@ -28,6 +28,10 @@ public class MainActivity extends AppCompatActivity {
         mSendSMSTextView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                /***************ВРЕМЕННО*/
+                Intent intent = new Intent(MainActivity.this, ProfileActivity.class);
+                startActivity(intent);
+                 /****************/
                 if (Validator.checkPhoneNumber(mEditText1.getText().toString()) == false) {
                     Toast.makeText(MainActivity.this, "Введен неверный номер!", Toast.LENGTH_SHORT)
                             .show();

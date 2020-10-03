@@ -3,7 +3,7 @@ package com.example.fefu_food_app.model;
 public class Money {
     private int price;
 
-    Money(int price) {
+    public Money(int price) {
         setMoney(price);
     }
 

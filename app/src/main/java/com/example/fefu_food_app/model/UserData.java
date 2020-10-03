@@ -14,7 +14,7 @@ public class UserData {
         products = new ArrayList<>(Arrays.asList(
                 new Product("Макароны", new Money(100), "", ProductCategory.GROCERY),
                 new Product("Сыр", new Money(100), "", ProductCategory.GROCERY),
-                new Product("Оливковое масло", new Money(100), "", ProductCategory.GROCERY),
+                new Product("Масло", new Money(100), "", ProductCategory.GROCERY),
                 new Product("Гречка", new Money(100), "", ProductCategory.GROCERY),
                 new Product("Рис", new Money(100), "", ProductCategory.GROCERY),
                 new Product("Пшено", new Money(100), "", ProductCategory.GROCERY)

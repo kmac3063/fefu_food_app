@@ -18,7 +18,7 @@
         android:layout_marginTop="40dp"
         android:layout_marginLeft="30dp" />
     <TextView
-        android:id="@+id/acback_text"
+        android:id="@+id/amback_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Меню"

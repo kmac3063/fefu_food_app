@@ -2,20 +2,25 @@ package com.example.fefu_food_app;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.fefu_food_app.model.Money;
 import com.example.fefu_food_app.model.Order;
 import com.example.fefu_food_app.model.Product;
 import com.example.fefu_food_app.model.ProductCategory;
 import com.example.fefu_food_app.model.UserData;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class ProductsActivity extends AppCompatActivity {
@@ -30,11 +35,15 @@ public class ProductsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_products);
 
-        ProductCategory cat = ProductCategory.values()[savedInstanceState.getInt("FIRST")];
+        ProductCategory cat = ProductCategory.values()[getIntent().getIntExtra("FIRST", -1) - 1];
         List<Product> list = UserData.getUserData().getProducts(cat);
 
         mRecyclerView = findViewById(R.id.products_recycler);
-        mRecyclerView.setAdapter(new ProdAdapter(list));
+        mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+
+        ProdAdapter adapter = new ProdAdapter(list);
+
+        mRecyclerView.setAdapter(adapter);
 
         imV = findViewById(R.id.image_view01);
         imV.setOnClickListener(new View.OnClickListener() {
@@ -57,14 +66,10 @@ public class ProductsActivity extends AppCompatActivity {
         ImageView itemImageView1;
         TextView mTextView;
 
-        public ProdViewHolder(@NonNull View itemView) {
+        public ProdViewHolder(View itemView) {
             super(itemView);
-        }
-
-        public ProdViewHolder(LayoutInflater inflater, ViewGroup parent) {
-            super(inflater.inflate(R.layout.layout_recycle_item, parent, false));
-            itemImageView1 = findViewById(R.id.item_image_view1);
-            mTextView = findViewById(R.id.item_text_view);
+            itemImageView1 = itemView.findViewById(R.id.item_image_view1);
+            mTextView = itemView.findViewById(R.id.item_text_view);
         }
 
         public void bind(Product p) {
@@ -78,8 +83,9 @@ public class ProductsActivity extends AppCompatActivity {
         @NonNull
         @Override
         public ProdViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-            LayoutInflater layoutInflater = LayoutInflater.from(ProductsActivity.this);
-            return new ProdViewHolder(layoutInflater, parent);
+            View view = LayoutInflater.from(ProductsActivity.this)
+                    .inflate(R.layout.layout_recycle_item, parent, false);
+            return new ProdViewHolder(view);
         }
 
         ProdAdapter(List<Product> prods) {
@@ -88,7 +94,8 @@ public class ProductsActivity extends AppCompatActivity {
 
         @Override
         public void onBindViewHolder(@NonNull ProdViewHolder holder, int position) {
-            holder.bind(mProducts.get(position));
+            Product p = mProducts.get(position);
+            holder.bind(p);
         }
 
         @Override
