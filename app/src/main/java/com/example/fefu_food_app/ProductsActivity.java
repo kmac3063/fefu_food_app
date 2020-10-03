@@ -9,6 +9,8 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.app.Dialog;
+import android.content.Context;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -27,6 +29,41 @@ import com.example.fefu_food_app.model.UserData;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+
+class ProductAlertDialog {
+    public ProductAlertDialog(String title, String content, Context context) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(context);
+        builder.setTitle(title);
+        builder.setMessage(content);
+        builder.setNegativeButton("NO",
+                new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog,
+                                        int which) {
+                        //showMessage("Нажали Нет");
+                    }
+                });
+        builder.setPositiveButton("OK",
+                new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog,
+                                        int which) {
+                        //showMessage("Нажали ОК");
+                    }
+                });
+        // устанавливаем кнопку, которая отвечает за выбранный нами ответ
+        // в данном случаем мы просто хотим всплывающее окно с отменой
+        builder.setNeutralButton("Cancel",
+                new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog,
+                                        int which) {
+                        //showMessage("Нажали Отмена");
+                    }
+                });
+
+        builder.show();
+    }
+
+}
+
 
 public class ProductsActivity extends AppCompatActivity {
 
