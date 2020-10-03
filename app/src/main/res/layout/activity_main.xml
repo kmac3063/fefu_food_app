@@ -67,7 +67,8 @@
         android:inputType="phone"
         android:maxLength="12"
         android:gravity="center"
-        android:backgroundTint="@color/colorGray"/>
+        android:backgroundTint="@color/colorGray"
+        android:hint="Номер телефона"/>
     <View
         android:id="@+id/view2"
         android:layout_width="300dp"
