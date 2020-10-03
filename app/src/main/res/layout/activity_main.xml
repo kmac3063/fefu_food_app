@@ -13,8 +13,6 @@
         android:layout_marginBottom="100dp"
         android:background="@drawable/logo_big"
         android:scaleType="center"
-        android:scaleX="1.1"
-        android:scaleY="1.1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -93,6 +91,20 @@
         app:layout_constraintStart_toStartOf="@+id/view2"
         app:layout_constraintTop_toTopOf="@+id/view2"
         android:gravity="center"/>
+    <EditText
+        android:visibility="gone"
+        android:id="@+id/edit_text2"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintTop_toTopOf="@+id/view2"
+        android:inputType="number"
+        android:maxLength="4"
+        android:gravity="center"
+        android:backgroundTint="@color/colorGray" />
     <TextView
         android:id="@+id/text4"
         android:layout_width="250dp"
