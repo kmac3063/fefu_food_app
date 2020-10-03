@@ -16,6 +16,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.fefu_food_app.model.Money;
 import com.example.fefu_food_app.model.Order;
@@ -97,15 +98,27 @@ public class ProductsActivity extends AppCompatActivity {
         class ProdViewHolder extends RecyclerView.ViewHolder {
             ImageView itemImageView1;
             TextView mTextView;
+            Product p;
 
             public ProdViewHolder(View itemView) {
                 super(itemView);
                 itemImageView1 = itemView.findViewById(R.id.item_image_view1);
                 mTextView = itemView.findViewById(R.id.item_text_view);
+                itemImageView1.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        UserData.getUserData().getCurrentOrder().addProduct(p);
+                        Toast.makeText(ProductsActivity.this, "Продукт \"" +
+                                mTextView.getText().toString() + "\" добавлен в корзину", Toast.LENGTH_SHORT)
+                                .show()
+                        ;
+                    }
+                });
             }
 
-            public void bind(Product p) {
-                mTextView.setText(p.getName());
+            public void bind(Product p1) {
+                p = p1;
+                mTextView.setText(p1.getName());
             }
         }
     }

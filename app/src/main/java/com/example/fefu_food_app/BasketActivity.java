@@ -12,12 +12,16 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.fefu_food_app.model.Money;
 import com.example.fefu_food_app.model.Product;
+import com.example.fefu_food_app.model.UserData;
 
 import java.util.List;
 
 public class BasketActivity extends AppCompatActivity {
     RecyclerView mRecyclerView;
+    TextView mResultTextView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,9 +29,16 @@ public class BasketActivity extends AppCompatActivity {
 
         mRecyclerView = findViewById(R.id.noproducts_recycler);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
-        //UserData.getUserData().currentOrder.getList()
-//        ProdAdapter adapter = new ProdAdapter();
-//        mRecyclerView.setAdapter(adapter);
+        List<Product> products = UserData.getUserData().getCurrentOrder().getList();
+        ProdAdapter adapter = new ProdAdapter(products);
+        mRecyclerView.setAdapter(adapter);
+
+        Money m = new Money(0);
+        for (Product p : products)
+            m.add(p.getPrice());
+
+        mResultTextView = findViewById(R.id.result_text_view);
+        mResultTextView.setText(m.toString());
     }
 
     private class ProdAdapter extends RecyclerView.Adapter<ProdAdapter.ProdViewHolder> {
