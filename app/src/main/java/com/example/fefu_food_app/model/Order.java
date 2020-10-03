@@ -24,13 +24,17 @@ public class Order {
      *         new Money(
      *             price // int
      *         ),
-     *         additionalWishse // String
+     *         additionalWishes // String
      *         category // ProductCategory
      *     )
      * );
      */
     public void addProduct(Product product) {
         products.add(product);
+    }
+
+    public List<Product> getList() {
+        return products;
     }
 
     public Money calculateSum() {

@@ -10,7 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
         <activity android:name=".BasketActivity"></activity>
-        <activity android:name=".ProductsActivity" />
+        <activity android:name=".CustomerMenuActivity"></activity>
+        <activity android:name=".ProductsActivity"></activity>
         <activity android:name=".MenuActivity" />
         <activity android:name=".CategoriesActivity" />
         <activity android:name=".ProfileActivity" />

@@ -154,7 +154,7 @@
         android:gravity="center"
         android:layout_marginTop="15dp"
         android:text="0 руб."
-        android:textColor="@android:color/black"
+        android:textColor="@android:color/holo_blue_light"
         android:textSize="20sp"
         android:textStyle="bold"
         android:visibility="visible"
@@ -173,7 +173,7 @@
         android:layout_marginBottom="5dp"
         android:textSize="14sp"
         android:textStyle="bold"
-        android:visibility="visible"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="@+id/invisible_order"
         app:layout_constraintEnd_toEndOf="@+id/invisible_order"
         app:layout_constraintStart_toStartOf="@+id/invisible_order" />
@@ -211,6 +211,7 @@
         android:layout_height="wrap_content"
         android:autoLink="web"
         android:text="Корзина пуста"
+        android:visibility="invisible"
         android:textColor="@android:color/holo_blue_light"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="@+id/amimage_view4"
@@ -230,5 +231,132 @@
         app:layout_constraintEnd_toEndOf="@+id/amimage_view2"
         app:layout_constraintStart_toStartOf="@+id/amimage_view2"
         app:layout_constraintTop_toTopOf="@+id/amimage_view2" />
+
+    <ImageView
+        android:id="@+id/amimage_view111"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/greengreen"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/amimage_view2"
+        app:layout_constraintTop_toTopOf="@+id/amimage_view2" />
+
+    <ImageView
+        android:id="@+id/amimage_view112"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/blueblue"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/amimage_view111"
+        app:layout_constraintTop_toBottomOf="@+id/amimage_view111" />
+
+    <ImageView
+        android:id="@+id/amimage_view113"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/blueblue"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/amimage_view112"
+        app:layout_constraintTop_toBottomOf="@+id/amimage_view112" />
+
+
+    <ImageView
+        android:id="@+id/amimage_view114"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/blueblue"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/amimage_view113"
+        app:layout_constraintTop_toBottomOf="@+id/amimage_view113" />
+
+
+    <TextView
+        android:id="@+id/amtext_view111"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Создать новый заказ"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:layout_marginLeft="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/amimage_view111"
+        app:layout_constraintLeft_toRightOf="@id/amimage_view0"
+        app:layout_constraintStart_toEndOf="@+id/amimage_view111"
+        app:layout_constraintTop_toTopOf="@+id/amimage_view111" />
+
+
+
+
+    <TextView
+        android:id="@+id/amtext_view112"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Заказ от 19.09.2020"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:layout_marginLeft="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/amimage_view112"
+        app:layout_constraintLeft_toRightOf="@id/amimage_view0"
+        app:layout_constraintStart_toEndOf="@+id/amimage_view112"
+        app:layout_constraintTop_toTopOf="@+id/amimage_view112" />
+
+    <TextView
+        android:id="@+id/amtext_view113"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Заказ от 05.09.2020"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:layout_marginLeft="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/amimage_view113"
+        app:layout_constraintLeft_toRightOf="@id/amimage_view0"
+        app:layout_constraintStart_toEndOf="@+id/amimage_view113"
+        app:layout_constraintTop_toTopOf="@+id/amimage_view113" />
+
+    <TextView
+        android:id="@+id/amtext_view114"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Заказ от 25.08.2020"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:layout_marginLeft="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/amimage_view114"
+        app:layout_constraintLeft_toRightOf="@id/amimage_view0"
+        app:layout_constraintStart_toEndOf="@+id/amimage_view114"
+        app:layout_constraintTop_toTopOf="@+id/amimage_view114" />
+
+
+    <TextView
+        android:id="@+id/basket_sum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="90dp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="0 руб."
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/amimage_view4"
+        app:layout_constraintStart_toStartOf="@+id/amimage_view4"
+        app:layout_constraintTop_toBottomOf="@+id/text_view12346" />
+
+
+    <ImageView
+        android:id="@+id/amimage_view115"
+        android:layout_width="80dp"
+        android:layout_height="3dp"
+        android:background="@drawable/greenrect"
+        app:layout_constraintBottom_toTopOf="@+id/amtext_view112"
+        app:layout_constraintEnd_toEndOf="@+id/amimage_view2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/amimage_view2"
+        app:layout_constraintTop_toBottomOf="@+id/amtext_view111" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

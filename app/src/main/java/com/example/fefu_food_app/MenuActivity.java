@@ -19,6 +19,7 @@ public class MenuActivity extends AppCompatActivity {
     private TextView mTextViewCard;
     ImageView mImageView1;
     TextView mTextView1;
+    TextView mTextView2;
 
     static String makeNumberBeautiful(String number) {
         StringBuilder stringBuilder = new StringBuilder();
@@ -54,6 +55,8 @@ public class MenuActivity extends AppCompatActivity {
         mTextViewCard = findViewById(R.id.card_text_view);
         mTextViewCard.setText("****-****-****-**" + userSettings.card.substring(14));
 
+        mTextView2 = findViewById(R.id.basket_sum);
+
         mImageView1 = findViewById(R.id.amimage_view0);
         mTextView1 = findViewById(R.id.amback_text);
         mTextView1.setOnClickListener(new View.OnClickListener() {
@@ -68,5 +71,12 @@ public class MenuActivity extends AppCompatActivity {
                 finish();
             }
         });
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        mTextView2.setText(UserData.getUserData().getCurrentOrder().calculateSum().toString() + " руб.");
     }
 }
