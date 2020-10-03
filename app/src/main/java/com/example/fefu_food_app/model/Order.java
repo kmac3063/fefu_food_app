@@ -7,7 +7,7 @@ import java.util.List;
 public class Order {
     public ArrayList<Product> products;
 
-    Order() {
+    public Order() {
         products = new ArrayList<>();
     }
 
@@ -31,16 +31,6 @@ public class Order {
      */
     public void addProduct(Product product) {
         products.add(product);
-    }
-
-    public List<Product> getProducts(ProductCategory category) {
-        List<Product> filtered = new ArrayList<>();
-        for (Product product : products) {
-            if (category.equals(product.getCategory())) {
-                filtered.add(product);
-            }
-        }
-        return filtered;
     }
 
     public Money calculateSum() {

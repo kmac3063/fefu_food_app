@@ -29,8 +29,6 @@
         android:layout_marginLeft="10dp"
         app:layout_constraintLeft_toRightOf="@id/image_view0"
         app:layout_constraintTop_toTopOf="@+id/image_view0" />
-
-
     <ImageView
         android:id="@+id/image_view1"
         android:layout_width="330dp"
