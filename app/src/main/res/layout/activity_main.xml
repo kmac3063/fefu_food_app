@@ -58,6 +58,18 @@
         app:layout_constraintRight_toRightOf="parent"
         android:background="@drawable/rectangle2"
         android:layout_marginTop="20dp"/>
+    <EditText
+        android:id="@+id/edit_text1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@id/view1"
+        app:layout_constraintRight_toRightOf="@id/view1"
+        app:layout_constraintTop_toTopOf="@id/view1"
+        app:layout_constraintBottom_toBottomOf="@id/view1"
+        android:inputType="phone"
+        android:maxLength="12"
+        android:gravity="center"
+        android:backgroundTint="@color/colorGray"/>
     <View
         android:id="@+id/view2"
         android:layout_width="300dp"
@@ -69,10 +81,11 @@
         android:layout_marginTop="30dp"/>
 
     <TextView
+        android:id="@+id/text3"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:background="@color/colorLightYellow"
-        android:text="Отправить смс-код"
+        android:text="@string/text1"
         android:textAllCaps="false"
         android:textColor="@color/colorGray"
         app:layout_constraintBottom_toBottomOf="@+id/view2"
@@ -80,5 +93,28 @@
         app:layout_constraintStart_toStartOf="@+id/view2"
         app:layout_constraintTop_toTopOf="@+id/view2"
         android:gravity="center"/>
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="@string/text2"
+        android:textSize="20sp"
+        android:textColor="@color/colorGray"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintTop_toBottomOf="@+id/view2"
+        android:gravity="center"
+        android:layout_marginTop="20dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/food_track"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="50dp"/>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

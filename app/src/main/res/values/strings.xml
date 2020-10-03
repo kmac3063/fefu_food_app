@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">fefu_food_app</string>
+    <string name="text1"><u>Отправить смс-код</u></string>
+    <string name="text2"><u>Далее</u></string>
 </resources>
