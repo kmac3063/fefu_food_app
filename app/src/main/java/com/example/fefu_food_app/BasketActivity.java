@@ -50,7 +50,29 @@ public class BasketActivity extends AppCompatActivity {
                 finish();
             }
         });
+
+
+        one = findViewById(R.id.image_view012);
+        one.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
+
+        two = findViewById(R.id.back_text12);
+        two.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
+
     }
+
+    ImageView one;
+    TextView two;
+
 
     private class ProdAdapter extends RecyclerView.Adapter<ProdAdapter.ProdViewHolder> {
 

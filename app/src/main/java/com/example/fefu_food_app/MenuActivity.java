@@ -119,6 +119,7 @@ public class MenuActivity extends AppCompatActivity {
         mOrderSumTextView.setText("");
 
         mCancelTextView = findViewById(R.id.invisible_cancel_text_view);
+
     }
 
     @Override
