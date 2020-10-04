@@ -57,4 +57,5 @@ public class UserData {
         return filtered;
     }
 
+    public String cur_ord = "0 руб.";
 }
