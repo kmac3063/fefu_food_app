@@ -33,7 +33,7 @@
         android:id="@+id/ссamimage_view1"
         android:layout_width="330dp"
         android:layout_height="140dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="120dp"
         android:background="@drawable/rectangle3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -162,7 +162,7 @@
 
     <ImageView
         android:id="@+id/ссamimage_view228"
-        android:layout_width="wrap_content"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:src="@drawable/checklist_customer"
         app:layout_constraintBottom_toBottomOf="@+id/ссinvisible_order"
@@ -305,7 +305,7 @@
 
     <ImageView
         android:id="@+id/ссamimage_view228asd"
-        android:layout_width="wrap_content"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:src="@drawable/galka"
         android:layout_marginTop="5dp"
