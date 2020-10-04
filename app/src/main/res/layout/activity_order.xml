@@ -71,19 +71,85 @@
         android:layout_marginBottom="230dp"/>
 
     <TextView
+        android:id="@+id/textVie212w"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
         android:text="Молоко"
+        android:textColor="@android:color/black"
+        android:textSize="16dp"
         app:layout_constraintEnd_toEndOf="@+id/ooimageview0"
         app:layout_constraintStart_toStartOf="@+id/ooimageview0"
         app:layout_constraintTop_toTopOf="@+id/ooimageview0" />
 
-<!--    <ImageView-->
-<!--        android:id="@+id/didid"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="1dp" -->
-<!--        android:background="@drawable/devider1" />-->
-<!--    -->
+    <ImageView
+        android:id="@+id/dididdd"
+        android:layout_width="100dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/devider1"
+        app:layout_constraintEnd_toEndOf="@+id/ooimageview0"
+        app:layout_constraintStart_toStartOf="@+id/ooimageview0"
+        app:layout_constraintTop_toBottomOf="@+id/textVie212w" />
+
+
+    <TextView
+        android:id="@+id/riceview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Рис"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="15dp"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/ooimageview0"
+        app:layout_constraintStart_toStartOf="@+id/ooimageview0"
+        app:layout_constraintTop_toBottomOf="@+id/textVie212w" />
+
+    <ImageView
+        android:id="@+id/dididddss"
+        android:layout_width="100dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/devider1"
+        app:layout_constraintEnd_toEndOf="@+id/ooimageview0"
+        app:layout_constraintStart_toStartOf="@+id/ooimageview0"
+        app:layout_constraintTop_toBottomOf="@+id/riceview" />
+
+    <TextView
+        android:id="@+id/cheeseview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Сыр"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="15dp"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/ooimageview0"
+        app:layout_constraintStart_toStartOf="@+id/ooimageview0"
+        app:layout_constraintTop_toBottomOf="@+id/riceview" />
+
+    <ImageView
+        android:id="@+id/dididddssrr"
+        android:layout_width="100dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/devider1"
+        app:layout_constraintEnd_toEndOf="@+id/ooimageview0"
+        app:layout_constraintStart_toStartOf="@+id/ooimageview0"
+        app:layout_constraintTop_toBottomOf="@+id/cheeseview" />
+
+    <TextView
+        android:id="@+id/waterview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Вода"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="15dp"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/ooimageview0"
+        app:layout_constraintStart_toStartOf="@+id/ooimageview0"
+        app:layout_constraintTop_toBottomOf="@+id/cheeseview" />
+
+
     <ImageView
         android:id="@+id/ooimageview1"
         android:layout_width="250dp"
