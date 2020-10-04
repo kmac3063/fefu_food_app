@@ -9,18 +9,28 @@
         android:roundIcon="@drawable/layout_logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
-        <activity android:name=".ChatActivity"></activity>
-        <activity android:name=".OrderActivity" />
-        <activity android:name=".BoardActivity" />
-        <activity android:name=".BasketActivity" />
-        <activity android:name=".CustomerMenuActivity" />
-        <activity android:name=".ProductsActivity" />
-        <activity android:name=".MenuActivity" />
-        <activity android:name=".CategoriesActivity" />
-        <activity android:name=".ProfileActivity" />
+        <activity android:name=".ChatActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".OrderActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".BoardActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".BasketActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".CustomerMenuActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ProductsActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".MenuActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".CategoriesActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ProfileActivity"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".SplashScreenActivity"
-            android:theme="@style/SplashTheme">
+            android:theme="@style/SplashTheme"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
