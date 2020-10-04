@@ -12,12 +12,12 @@ public class UserData {
         // TODO load user settings from saved
         userSettings = new UserSettings();
         products = new ArrayList<>(Arrays.asList(
-                new Product("Макароны", new Money(100), "", ProductCategory.GROCERY),
-                new Product("Сыр", new Money(100), "", ProductCategory.GROCERY),
-                new Product("Масло", new Money(100), "", ProductCategory.GROCERY),
-                new Product("Гречка", new Money(100), "", ProductCategory.GROCERY),
-                new Product("Рис", new Money(100), "", ProductCategory.GROCERY),
-                new Product("Пшено", new Money(100), "", ProductCategory.GROCERY)
+                new Product("Макароны", new Money(100 * 100), "", ProductCategory.GROCERY),
+                new Product("Сыр", new Money(200 * 100), "", ProductCategory.GROCERY),
+                new Product("Масло", new Money(150 * 100), "", ProductCategory.GROCERY),
+                new Product("Гречка", new Money(70 * 100), "", ProductCategory.GROCERY),
+                new Product("Рис", new Money(60 * 100), "", ProductCategory.GROCERY),
+                new Product("Пшено", new Money(90 * 100), "", ProductCategory.GROCERY)
                 ));
         ProductCategory[] cats = ProductCategory.values();
         for (ProductCategory cat : cats) {

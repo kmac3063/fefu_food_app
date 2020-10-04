@@ -21,6 +21,7 @@ import java.util.List;
 public class BasketActivity extends AppCompatActivity {
     RecyclerView mRecyclerView;
     TextView mResultTextView;
+    ImageView mOkImageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +40,14 @@ public class BasketActivity extends AppCompatActivity {
 
         mResultTextView = findViewById(R.id.result_text_view);
         mResultTextView.setText(m.toString() + " руб.");
+
+        mOkImageView = findViewById(R.id.ok_image_view);
+        mOkImageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                UserData.getUserData().getCurrentOrder().clear();
+            }
+        });
     }
 
     private class ProdAdapter extends RecyclerView.Adapter<ProdAdapter.ProdViewHolder> {
@@ -71,6 +80,7 @@ public class BasketActivity extends AppCompatActivity {
             int ind = mProducts.indexOf(p);
             mProducts.remove(ind);
             notifyItemRemoved(ind);
+            mResultTextView.setText(UserData.getUserData().getCurrentOrder().calculateSum().toString());
         }
 
         class ProdViewHolder extends RecyclerView.ViewHolder {

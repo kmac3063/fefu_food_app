@@ -44,8 +44,7 @@ public class BoardActivity extends AppCompatActivity {
                 new Pair<String, String>("Цифровой Прорыв", "3000 руб"),
                 new Pair<String, String>("Гейтс Билл", "560 руб")
         ));
-        //TO DO адаптер не работает
-        //mRecyclerView.setAdapter(new ProdAdapter(list));
+        mRecyclerView.setAdapter(new ProdAdapter(list));
     }
 
     private class ProdAdapter extends RecyclerView.Adapter<ProdAdapter.ProdViewHolder> {
@@ -65,8 +64,7 @@ public class BoardActivity extends AppCompatActivity {
 
         @Override
         public void onBindViewHolder(@NonNull ProdViewHolder holder, int position) {
-            //Product p = mProducts.get(position);
-            // holder.bind(p);
+            holder.bind(mProducts.get(position));
         }
 
         @Override
@@ -75,26 +73,32 @@ public class BoardActivity extends AppCompatActivity {
         }
 
         class ProdViewHolder extends RecyclerView.ViewHolder {
-            ImageView itemImageView1;
-            TextView mTextView;
-            Product p;
+            TextView mTextViewx2;
+            TextView mTextViewx3;
+            TextView mTextViewx7;
+            ImageView mImageViewx4;
+
+            Pair<String, String> p;
 
             public ProdViewHolder(View itemView) {
                 super(itemView);
-                itemImageView1 = itemView.findViewById(R.id.item_image_view1);
-                mTextView = itemView.findViewById(R.id.item_text_view);
-                itemImageView1.setOnClickListener(new View.OnClickListener() {
+                mTextViewx2 = itemView.findViewById(R.id.x2);
+                mTextViewx3 = itemView.findViewById(R.id.x3);;
+                mTextViewx7 = itemView.findViewById(R.id.x7);;
+                mImageViewx4 = itemView.findViewById(R.id.x4);;
+                mImageViewx4.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        UserData.getUserData().getCurrentOrder().addProduct(p);
-                        Toast.makeText (BoardActivity.this, "a", Toast.LENGTH_SHORT).show();
+                        Toast.makeText (BoardActivity.this, "Вы выбрали заказ!", Toast.LENGTH_SHORT).show();
                     }
                 });
             }
 
-            public void bind(Product p1) {
+            public void bind(Pair<String, String> p1) {
                 p = p1;
-                mTextView.setText(p1.getName());
+                mTextViewx2.setText(p1.first.split(" ")[0]);
+                mTextViewx3.setText(p1.first.split(" ")[1]);
+                mTextViewx7.setText(p1.second);
             }
         }
     }
