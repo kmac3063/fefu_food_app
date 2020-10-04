@@ -55,7 +55,7 @@ public class OrderActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Toast.makeText(OrderActivity.this, "Отлично! Ожидайте подтверждения заказчика.", Toast.LENGTH_SHORT)
                         .show();
-                Intent i = new Intent(OrderActivity.this, MenuActivity.class);
+                Intent i = new Intent(OrderActivity.this,  CustomerMenuActivity.class);
                 startActivity(i);
             }
         });
