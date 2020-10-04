@@ -318,13 +318,12 @@
         android:id="@+id/kruzhochek11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
         android:text="Подробнее"
         android:textColor="@android:color/holo_green_light"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="@+id/ссinvisible_order123"
-        app:layout_constraintEnd_toEndOf="@+id/ссinvisible_order123"
-        app:layout_constraintStart_toStartOf="@+id/ссinvisible_order123"
+        app:layout_constraintEnd_toEndOf="@+id/ссamimage_view228asd"
+        app:layout_constraintStart_toStartOf="@+id/ссamimage_view228asd"
         app:layout_constraintTop_toBottomOf="@+id/ссamimage_view228asd" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

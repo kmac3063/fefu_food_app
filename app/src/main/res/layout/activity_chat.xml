@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#EEEEEE"
     tools:context=".ChatActivity">
 
 
@@ -52,8 +53,49 @@
         app:layout_constraintLeft_toRightOf="@id/chat_ximage_view01"
         app:layout_constraintTop_toTopOf="@+id/chat_ximage_view01" />
 
+    <ImageView
+        android:id="@+id/diviviivivivivivivviiv"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/devider1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
 
+    <ImageView
+        android:id="@+id/diviviivivivivivsaasasivviiv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/calcc"
+        android:layout_marginRight="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/diviviivivivivivivviiv" />
 
+    <ImageView
+        android:id="@+id/am2222image_view1"
+        android:layout_width="290dp"
+        android:layout_height="40dp"
+        android:background="@drawable/rectangle3"
+        app:layout_constraintBottom_toBottomOf="@+id/diviviivivivivivsaasasivviiv"
+        app:layout_constraintEnd_toStartOf="@+id/diviviivivivivivsaasasivviiv"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/diviviivivivivivsaasasivviiv" />
+
+    <TextView
+        android:id="@+id/last_text_wow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Сообщение..."
+        android:textColor="@android:color/darker_gray"
+        android:textSize="20sp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/am2222image_view1"
+        app:layout_constraintLeft_toRightOf="@id/chat_ximage_view01"
+        app:layout_constraintStart_toStartOf="@+id/am2222image_view1"
+        app:layout_constraintTop_toTopOf="@+id/am2222image_view1" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

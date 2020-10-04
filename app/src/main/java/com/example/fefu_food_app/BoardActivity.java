@@ -46,7 +46,29 @@ public class BoardActivity extends AppCompatActivity {
                 new Pair<String, String>("Гейтс Билл", "560 руб")
         ));
         mRecyclerView.setAdapter(new ProdAdapter(list));
+
+
+
+        one = findViewById(R.id.ximage_view01);
+        one.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
+
+        two = findViewById(R.id.xback_text1);
+        two.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
+
     }
+
+    ImageView one;
+    TextView two;
 
     private class ProdAdapter extends RecyclerView.Adapter<ProdAdapter.ProdViewHolder> {
 

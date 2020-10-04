@@ -44,5 +44,25 @@ public class CustomerMenuActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
+        one = findViewById(R.id.ссamimage_view0);
+        one.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
+
+        two = findViewById(R.id.ссamback_text);
+        two.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
+
     }
+
+    ImageView one;
+    TextView two;
 }
