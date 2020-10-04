@@ -45,7 +45,9 @@ public class BasketActivity extends AppCompatActivity {
         mOkImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                UserData.getUserData().cur_ord = UserData.getUserData().getCurrentOrder().calculateSum().toString() + " руб.";
                 UserData.getUserData().getCurrentOrder().clear();
+                finish();
             }
         });
     }

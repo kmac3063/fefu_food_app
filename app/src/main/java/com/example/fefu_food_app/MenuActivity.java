@@ -26,6 +26,9 @@ public class MenuActivity extends AppCompatActivity {
     TextView mCreateTextView;
     ImageView mBasketImageView;
 
+    TextView mOrderSumTextView;
+    TextView mCancelTextView;
+
     static String makeNumberBeautiful(String number) {
         StringBuilder stringBuilder = new StringBuilder();
         for (int i = number.length() - 1; i > number.length() - 3; --i)
@@ -111,6 +114,11 @@ public class MenuActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
+        mOrderSumTextView = findViewById(R.id.invisible_current_order_sum);
+        mOrderSumTextView.setText("");
+
+        mCancelTextView = findViewById(R.id.invisible_cancel_text_view);
     }
 
     @Override
@@ -118,5 +126,11 @@ public class MenuActivity extends AppCompatActivity {
         super.onResume();
 
         mTextView2.setText(UserData.getUserData().getCurrentOrder().calculateSum().toString() + " руб.");
+        mOrderSumTextView.setText(UserData.getUserData().cur_ord);
+        if (UserData.getUserData().cur_ord.equals("0 руб.")) {
+            mCancelTextView.setVisibility(View.INVISIBLE);
+        } else {
+            mCancelTextView.setVisibility(View.VISIBLE);
+        }
     }
 }
