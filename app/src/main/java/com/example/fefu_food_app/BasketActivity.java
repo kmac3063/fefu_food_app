@@ -82,7 +82,7 @@ public class BasketActivity extends AppCompatActivity {
             int ind = mProducts.indexOf(p);
             mProducts.remove(ind);
             notifyItemRemoved(ind);
-            mResultTextView.setText(UserData.getUserData().getCurrentOrder().calculateSum().toString());
+            mResultTextView.setText(UserData.getUserData().getCurrentOrder().calculateSum().toString() + " руб.");
         }
 
         class ProdViewHolder extends RecyclerView.ViewHolder {
