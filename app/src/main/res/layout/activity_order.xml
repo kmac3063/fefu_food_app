@@ -84,7 +84,7 @@
 
     <ImageView
         android:id="@+id/dididdd"
-        android:layout_width="100dp"
+        android:layout_width="270dp"
         android:layout_height="1dp"
         android:layout_marginTop="5dp"
         android:background="@drawable/devider1"
@@ -107,7 +107,7 @@
 
     <ImageView
         android:id="@+id/dididddss"
-        android:layout_width="100dp"
+        android:layout_width="270dp"
         android:layout_height="1dp"
         android:layout_marginTop="5dp"
         android:background="@drawable/devider1"
@@ -129,7 +129,7 @@
 
     <ImageView
         android:id="@+id/dididddssrr"
-        android:layout_width="100dp"
+        android:layout_width="270dp"
         android:layout_height="1dp"
         android:layout_marginTop="5dp"
         android:background="@drawable/devider1"
@@ -149,6 +149,16 @@
         app:layout_constraintStart_toStartOf="@+id/ooimageview0"
         app:layout_constraintTop_toBottomOf="@+id/cheeseview" />
 
+
+    <ImageView
+        android:id="@+id/dididdasdadsd"
+        android:layout_width="270dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/devider1"
+        app:layout_constraintEnd_toEndOf="@+id/ooimageview0"
+        app:layout_constraintStart_toStartOf="@+id/ooimageview0"
+        app:layout_constraintTop_toBottomOf="@+id/waterview" />
 
     <ImageView
         android:id="@+id/ooimageview1"
