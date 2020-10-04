@@ -28,6 +28,7 @@ public class MenuActivity extends AppCompatActivity {
 
     TextView mOrderSumTextView;
     TextView mCancelTextView;
+    ImageView mInvOrderImageView;
 
     static String makeNumberBeautiful(String number) {
         StringBuilder stringBuilder = new StringBuilder();
@@ -120,6 +121,16 @@ public class MenuActivity extends AppCompatActivity {
 
         mCancelTextView = findViewById(R.id.invisible_cancel_text_view);
 
+        mInvOrderImageView = findViewById(R.id.invisible_order);
+        mInvOrderImageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (mCancelTextView.getVisibility() == View.VISIBLE) {
+                    Intent i = new Intent(MenuActivity.this, ChatActivity.class);
+                    startActivity(i);
+                }
+            }
+        });
     }
 
     @Override

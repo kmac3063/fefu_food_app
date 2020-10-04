@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Pair;
 import android.view.LayoutInflater;
@@ -112,6 +113,9 @@ public class BoardActivity extends AppCompatActivity {
                     @Override
                     public void onClick(View view) {
                         Toast.makeText (BoardActivity.this, "Вы выбрали заказ!", Toast.LENGTH_SHORT).show();
+                        Intent i = new Intent(BoardActivity.this, OrderActivity.class);
+                        i.putExtra("KEY1", mTextViewx7.getText().toString());
+                        startActivity(i);
                     }
                 });
             }
