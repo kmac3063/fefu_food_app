@@ -15,10 +15,10 @@ public class OrderActivity extends AppCompatActivity {
         setContentView(R.layout.activity_order);
 
 
-        // Money m;
+        String money_from_previous_activity = "0";
 
         mTextView = findViewById(R.id.ooresult_text_view);
-        //mTextView.setText();
+        mTextView.setText(money_from_previous_activity + " руб.");
 
 
     }

@@ -68,7 +68,7 @@
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginHorizontal="30dp"
         android:layout_marginTop="130dp"
-        android:layout_marginBottom="180dp"/>
+        android:layout_marginBottom="230dp"/>
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/noproducts_recycler"
         android:layout_width="0dp"
@@ -80,31 +80,32 @@
     <ImageView
         android:id="@+id/ooimageview1"
         android:layout_width="250dp"
-        android:layout_height="120dp"
+        android:layout_height="60dp"
         android:src="@drawable/rectangle2"
         app:layout_constraintLeft_toLeftOf="@id/ooimageview0"
         app:layout_constraintRight_toRightOf="@id/ooimageview0"
         app:layout_constraintBottom_toBottomOf="@id/ooimageview0"
         android:layout_marginBottom="30dp"/>
+
     <TextView
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:height="80dp"
+        android:gravity="left"
+        android:padding="20dp"
+        android:text="Молоко только 3.2%!\nСыр, желательно пармезан"
         android:textSize="14sp"
-        android:text="Если вы желаете приобрести молоко именно 3.2%,
-то стоит указать об этом здесь"
-        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="@+id/ooimageview1"
         app:layout_constraintLeft_toLeftOf="@id/ooimageview1"
-        app:layout_constraintRight_toRightOf="@id/ooimageview1"
-        app:layout_constraintBottom_toBottomOf="@id/ooimageview1"
-        app:layout_constraintTop_toTopOf="@id/ooimageview1"
-        android:padding="20dp"/>
+        app:layout_constraintStart_toStartOf="@+id/ooimageview1"
+        app:layout_constraintTop_toTopOf="@+id/ooimageview1" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:src="@drawable/buy1"
+        android:src="@drawable/suggest_order"
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginBottom="25dp"/>
 
@@ -117,18 +118,60 @@
         android:textSize="23sp"
         android:text="Итого"
         android:textColor="@android:color/black"
-        android:layout_marginBottom="15dp"
+        android:layout_marginBottom="30dp"
         android:layout_marginLeft="30dp"/>
     <TextView
         android:id="@+id/ooresult_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="23sp"
-        tools:text="500 руб"
+        tools:text="0 руб"
+        android:textStyle="bold"
         android:textColor="@android:color/black"
         app:layout_constraintBottom_toBottomOf="@id/ooasd"
         app:layout_constraintTop_toTopOf="@id/ooasd"
         app:layout_constraintRight_toRightOf="@id/ooimageview1"
         android:layout_marginRight="20dp"/>
+
+    <ImageView
+        android:id="@+id/ooссamimage_view1"
+        android:layout_width="330dp"
+        android:layout_height="100dp"
+        android:background="@drawable/rectangle3"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ooimageview0" />
+
+    <TextView
+        android:id="@+id/ooooasd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Доставка"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textSize="23sp"
+        app:layout_constraintEnd_toEndOf="@+id/ooссamimage_view1"
+        app:layout_constraintStart_toStartOf="@+id/ooссamimage_view1"
+        app:layout_constraintTop_toTopOf="@+id/ooссamimage_view1" />
+
+
+    <TextView
+        android:id="@+id/ooomoyaoborona"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Доставка"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textSize="23sp"
+        app:layout_constraintEnd_toEndOf="@+id/ooссamimage_view1"
+        app:layout_constraintStart_toStartOf="@+id/ooссamimage_view1"
+        app:layout_constraintTop_toTopOf="@+id/ooссamimage_view1" />
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
