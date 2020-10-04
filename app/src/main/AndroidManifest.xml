@@ -9,7 +9,8 @@
         android:roundIcon="@drawable/layout_logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
-        <activity android:name=".OrderActivity"></activity>
+        <activity android:name=".ChatActivity"></activity>
+        <activity android:name=".OrderActivity" />
         <activity android:name=".BoardActivity" />
         <activity android:name=".BasketActivity" />
         <activity android:name=".CustomerMenuActivity" />
