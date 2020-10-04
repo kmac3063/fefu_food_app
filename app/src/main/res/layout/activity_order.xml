@@ -101,13 +101,14 @@
         app:layout_constraintTop_toTopOf="@+id/ooimageview1" />
 
     <ImageView
+        android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="25dp"
         android:src="@drawable/suggest_order"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="25dp"/>
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
 
     <TextView
         android:id="@+id/ooasd"
@@ -162,16 +163,34 @@
         android:id="@+id/ooomoyaoborona"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:text="Доставка"
+        android:text="50"
+        android:layout_marginTop="20dp"
         android:textColor="@android:color/black"
-        android:textStyle="bold"
         android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/ooссamimage_view1"
         app:layout_constraintEnd_toEndOf="@+id/ooссamimage_view1"
         app:layout_constraintStart_toStartOf="@+id/ooссamimage_view1"
         app:layout_constraintTop_toTopOf="@+id/ooссamimage_view1" />
 
+    <ImageView
+        android:id="@+id/minusooссamimage_view1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/add__s"
+        android:layout_marginLeft="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ooomoyaoborona"
+        app:layout_constraintStart_toEndOf="@+id/ooomoyaoborona"
+        app:layout_constraintTop_toTopOf="@+id/ooomoyaoborona" />
 
-
+    <ImageView
+        android:id="@+id/plusooссamimage_view1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/remove__s"
+        android:layout_marginRight="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ooomoyaoborona"
+        app:layout_constraintEnd_toStartOf="@+id/ooomoyaoborona"
+        app:layout_constraintTop_toTopOf="@+id/ooomoyaoborona" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
