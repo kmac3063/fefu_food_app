@@ -33,8 +33,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 /***************ВРЕМЕННО*/
-                Intent intent = new Intent(MainActivity.this, ProfileActivity.class);
-                startActivity(intent);
+//                Intent intent = new Intent(MainActivity.this, ProfileActivity.class);
+//                startActivity(intent);
                  /****************/
                 if (Validator.checkPhoneNumber(mEditText1.getText().toString()) == false) {
                     Toast.makeText(MainActivity.this, "Введен неверный номер!", Toast.LENGTH_SHORT)
@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
         mGoNextTextView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (mEditText2.getText().toString().equals("8008")) {
+                if (mEditText2.getText().toString().equals("2020")) {
                     Intent intent = new Intent(MainActivity.this, ProfileActivity.class);
                     startActivity(intent);
                 } else {
