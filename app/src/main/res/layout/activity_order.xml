@@ -184,7 +184,7 @@
         app:layout_constraintTop_toTopOf="@+id/ooimageview1" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imageView100"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="25dp"
@@ -257,7 +257,7 @@
         app:layout_constraintTop_toTopOf="@+id/ooссamimage_view1" />
 
     <ImageView
-        android:id="@+id/minusooссamimage_view1"
+        android:id="@+id/plusooссamimage_view1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/add__s"
@@ -267,7 +267,7 @@
         app:layout_constraintTop_toTopOf="@+id/ooomoyaoborona" />
 
     <ImageView
-        android:id="@+id/plusooссamimage_view1"
+        android:id="@+id/minusooссamimage_view1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/remove__s"

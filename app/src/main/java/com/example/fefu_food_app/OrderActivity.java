@@ -3,8 +3,6 @@ package com.example.fefu_food_app;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.view.View;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 public class OrderActivity extends AppCompatActivity {
@@ -23,24 +21,5 @@ public class OrderActivity extends AppCompatActivity {
         mTextView.setText(money_from_previous_activity);
 
 
-        one = findViewById(R.id.ooimage_view012);
-        one.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                finish();
-            }
-        });
-
-        two = findViewById(R.id.ooback_text12);
-        two.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                finish();
-            }
-        });
-
     }
-
-    ImageView one;
-    TextView two;
 }
