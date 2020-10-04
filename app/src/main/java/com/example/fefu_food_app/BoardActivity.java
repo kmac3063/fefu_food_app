@@ -112,7 +112,6 @@ public class BoardActivity extends AppCompatActivity {
                 mImageViewx4.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        Toast.makeText (BoardActivity.this, "Вы выбрали заказ!", Toast.LENGTH_SHORT).show();
                         Intent i = new Intent(BoardActivity.this, OrderActivity.class);
                         i.putExtra("KEY1", mTextViewx7.getText().toString());
                         startActivity(i);
