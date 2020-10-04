@@ -33,6 +33,10 @@ public class Order {
         products.add(product);
     }
 
+    public void clear() {
+        products.clear();
+    }
+
     public List<Product> getList() {
         return products;
     }
